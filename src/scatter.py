@@ -92,6 +92,8 @@ def create_scatter_components(df_business, categories_of_interest, source=None, 
     combined_booleans = [rg and cat for rg, cat in zip(filter_rating_group.booleans, filter_category.booleans)]
     combined_filter = BooleanFilter(booleans=combined_booleans)
 
+    #data_points_init = sum(combined_booleans)
+
     #print("Rating booleans:", filter_rating_group.booleans)
     #print("Category booleans:", filter_category.booleans)
     #print("Combined booleans:", combined_filter.booleans)
@@ -127,6 +129,7 @@ def create_scatter_components(df_business, categories_of_interest, source=None, 
     # Function to update the combined filter after rating or category filters change
     def update_combined_filter():
         combined_filter.booleans = [rg and cat for rg, cat in zip(filter_rating_group.booleans, filter_category.booleans)]
+    
 
     # Callback to update rating group filter
     def update_rating_group_filter(attr, old, new):
@@ -220,7 +223,7 @@ def create_kernel_density_components(df_business, fig_scatter_kd, checkboxes_rat
                   "Rating 3-4": cb[3],
                   "Rating 4-5": cb[6]}
 
-    default_selected_rating_groups = ["Rating 1-2", "Rating 4-5"]
+    default_selected_rating_groups = ["Rating 1-2", "Rating 2-3", "Rating 3-4", "Rating 4-5"]
     weekdays = checkboxes_weekdays.labels
     rating_groups = checkboxes_rating_groups.labels
 
@@ -359,8 +362,6 @@ def create_kernel_density_components(df_business, fig_scatter_kd, checkboxes_rat
             if contour:
                 contour.name = "Contour_" + rating_group
                 contours_dict.setdefault(rating_group, []).append(contour)
-
-
 
     # new code ends
 
