@@ -2,7 +2,7 @@
 
 An interactive data visualization dashboard designed to assist aspiring restaurant owners in making informed business decisions. By analyzing the Yelp Open Dataset, this tool uncovers patterns in location density, opening hours, and customer rating trends.
 
-![Dashboard Overview](path/to/your/dashboard_screenshot.png)
+![Dashboard Overview](images\image_1_overview.png)
 > *Snapshot of the main dashboard interface showing linked views and geospatial analysis.*
 
 ## 📖 Project Overview
@@ -46,13 +46,6 @@ A temporal analysis showing a 365-day rolling average of star ratings.
 
 ## ⚙️ Installation & Usage
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Sadik/your-repo-name.git](https://github.com/Sadik/your-repo-name.git)
-   cd your-repo-name
-
-## Setup
-
 1. Create a new virtual environment
 2. Install other requirements using `pip install -r requirements.txt`
 3. Add data files to `/data/...` (<https://drive.google.com/drive/folders/1Bxcp7AepA0WYMYJPcHPyx1_qM6JBlRrj>)
@@ -64,18 +57,3 @@ To see the dashboard, run this command from your command prompt:
 `bokeh serve --show main.py`
 
 Note: Your directory should be in the Dashboard folder.
-
-## Git Workflow
-
-Trunk based development: New features are developed on short-lived feature branches that are merged into the main branch frequently. Feature branches should not exist longer than one week before being merged into the main branch.
-
-Example of implementing a new feature:
-
-1. Create new branch with descriptive name (e.g. 'implement-mse-lossfunction')
-2. Implement the feature, commit frequently with descriptive commit messages.
-3. When implementation is finished:
-    - Merge main branch into feature branch to bring it up to the current state of development.
-    - Create pull request, assign other team members.
-    - Wait for pull request to be confirmed.
-    - Merge feature branch into main branch.
-    - Delete feature branch.
