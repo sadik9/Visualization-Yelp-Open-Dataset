@@ -18,31 +18,31 @@ The tool was built using **Python** and **Bokeh**, adhering to formal data visua
 
 While this was a group effort, my primary focus was the design and implementation of the **interactive dashboard** and the **User Experience (UX)** logic.
 
-* [cite_start]**Dashboard Layout:** Designed the layout to minimize cognitive load, placing controls alongside real-time updates to support intents like "Show me something conditionally"[cite: 61, 63].
-* [cite_start]**Interaction Logic:** Implemented the filtering systems (City, Category, Rating) and the Model-View-Controller (MVC) patterns that handle the refresh/update functionality[cite: 68].
-* [cite_start]**Direct Manipulation:** Engineered the interface to allow users to manipulate data representations directly (e.g., toggling contours, selecting ratings), ensuring high "Directness of Interaction"[cite: 65].
+* **Dashboard Layout:** Designed the layout to minimize cognitive load, placing controls alongside real-time updates to support intents like "Show me something conditionally".
+* **Interaction Logic:** Implemented the filtering systems (City, Category, Rating) and the Model-View-Controller (MVC) patterns that handle the refresh/update functionality.
+* **Direct Manipulation:** Engineered the interface to allow users to manipulate data representations directly (e.g., toggling contours, selecting ratings), ensuring high "Directness of Interaction".
 
 ## 🚀 Key Features
 
 ### 1. Geospatial Analysis (Hexbin Map)
 A hexbin plot overlaid on a city map to visualize restaurant density.
-* [cite_start]**Purpose:** Mitigates overplotting to show high/low density areas at a glance[cite: 73].
-* [cite_start]**Interaction:** Users can use "Lasso Select" to highlight specific neighborhoods, which links directly to the other plots[cite: 79].
+* **Purpose:** Mitigates overplotting to show high/low density areas at a glance.
+* **Interaction:** Users can use "Lasso Select" to highlight specific neighborhoods, which links directly to the other plots.
 
 ### 2. Operational Strategy (Scatter-Contour Plot)
 Maps opening hours (x-axis) against opening duration (y-axis).
-* [cite_start]**Purpose:** Helps owners identify low-competition time slots[cite: 95].
-* [cite_start]**Features:** Includes toggleable contour lines to combat overplotting and visualize the most common operating windows[cite: 86].
+* **Purpose:** Helps owners identify low-competition time slots.
+* **Features:** Includes toggleable contour lines to combat overplotting and visualize the most common operating windows.
 
 ### 3. Market Trends (Line Chart)
 A temporal analysis showing a 365-day rolling average of star ratings.
-* [cite_start]**Purpose:** Allows users to compare the performance of different restaurant categories over time to spot market threats or opportunities[cite: 99, 103].
+* **Purpose:** Allows users to compare the performance of different restaurant categories over time to spot market threats or opportunities.
 
 ## 🛠️ Technologies Used
 * **Language:** Python
-* [cite_start]**Library:** Bokeh (for interactive visualizations) [cite: 135]
+* **Library:** Bokeh (for interactive visualizations)
 * **Data Processing:** Pandas (JSON parsing and cleaning)
-* [cite_start]**Dataset:** [Yelp Open Dataset](https://www.yelp.com/dataset) (Academic Use) [cite: 15]
+* **Dataset:** [Yelp Open Dataset](https://www.yelp.com/dataset) (Academic Use)
 
 ## ⚙️ Installation & Usage
 
@@ -54,6 +54,6 @@ A temporal analysis showing a 365-day rolling average of star ratings.
 
 To see the dashboard, run this command from your command prompt:
 
-`bokeh serve --show main.py`
+`bokeh serve --show dash.py`
 
-Note: Your directory should be in the Dashboard folder.
+Note: Your directory should be in the src folder.
