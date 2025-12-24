@@ -2,7 +2,7 @@
 
 An interactive data visualization dashboard designed to assist aspiring restaurant owners in making informed business decisions. By analyzing the Yelp Open Dataset, this tool uncovers patterns in location density, opening hours, and customer rating trends.
 
-![Dashboard Overview](images\image_1_overview.png)
+![Dashboard Overview](images/image_1_overview.png)
 > *Snapshot of the main dashboard interface showing linked views and geospatial analysis.*
 
 ## 📖 Project Overview
